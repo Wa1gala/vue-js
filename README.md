@@ -24,7 +24,7 @@ __Cтруктуру сайта:__
 Тут пусто(
 
 __Подключил scss__
-тут > [styles]()
+тут > [styles](https://github.com/Wa1gala/vue-js/tree/market/src/assets/styles)
 
 
 ### Compiles and hot-reloads for development
