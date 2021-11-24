@@ -1,16 +1,20 @@
 <template>
   <div id="app">
-    <about-card />
+    <m-main/>
+
   </div>
 </template>
 
 <script>
-import aboutCard from './components/about-card.vue'
+
+import mMain from './components/m-main'
+
 
 export default {
   name: 'App',
   components: {
-    aboutCard
+
+    mMain,
   }
 }
 </script>
