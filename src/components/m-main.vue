@@ -1,6 +1,5 @@
 <template>
   <div class="m-main">
-    <h1>{{ title }}</h1>
     <router-view> </router-view>
     <!-- <m-catalog />
     <m-cart /> -->
@@ -19,9 +18,7 @@ export default {
   // },
   props: {},
   data() {
-    return {
-      title: "Main",
-    };
+    return {};
   },
   methods: {},
   mounted() {
