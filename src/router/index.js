@@ -2,9 +2,13 @@ import Vue from "vue";
 import Router from "vue-router";
 
 import mCatalog from "../components/m-catalog.vue";
-import mCart from "../components/m-cart.vue";
+
+import { authNav } from "./authNav";
+import { cartNav } from "./cartNav";
 
 Vue.use(Router);
+
+export const routes = [...authNav, ...cartNav];
 
 let router = new Router({
   routes: [
@@ -12,12 +16,6 @@ let router = new Router({
       path: "/",
       name: "catalog",
       component: mCatalog,
-    },
-    {
-      path: "/cart",
-      name: "cart",
-      component: mCart,
-      props: true,
     },
   ],
 });
