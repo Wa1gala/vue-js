@@ -89,7 +89,7 @@ export default {
       this.counter += 1;
     },
     btnHandler($event) {
-      console.log('Hello');
+      console.log("Hello");
       console.warn($event);
     },
     onMouseOver($event) {
