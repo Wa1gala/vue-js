@@ -1,21 +1,22 @@
 <template>
   <div class="m-main">
     <h1>{{ title }}</h1>
-    <m-catalog />
-    <m-cart />
+    <router-view> </router-view>
+    <!-- <m-catalog />
+    <m-cart /> -->
   </div>
 </template>
 
 <script>
-import mCatalog from "./m-catalog";
-import mCart from "./m-cart.vue";
+// import mCatalog from "./m-catalog";
+// import mCart from "./m-cart.vue";
 
 export default {
   name: "m-main",
-  components: {
-    mCatalog,
-    mCart,
-  },
+  // components: {
+  //   // mCatalog,
+  //   // mCart,
+  // },
   props: {},
   data() {
     return {
