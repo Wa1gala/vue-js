@@ -2,15 +2,16 @@
   <div class="m-catalog-item">
     <img
       class="m-catalog-item__img"
-      v-bind:src="require('../assets/images/' + product_data.image)"
+      v-bind:src="require('../assets/images/' + productData.image)"
       alt="img"
       style="width: 25%"
     />
-    <p class="m-catalog-item__name">{{ product_data.name }}</p>
-    <p class="m-catalog-item__price">Price: {{ product_data.price }}</p>
+    <p class="m-catalog-item__name">{{ productData.name }}</p>
+    <p class="m-catalog-item__price">Price: {{ productData.price }}</p>
+    <input type="number" min="0" max="10" value="">
     <button 
     class="m-catalog-item__addBtn btn"
-    @click="sendData"
+    @click="sendItemToCart"
     >
       Add to cart
     </button>
@@ -22,7 +23,7 @@ export default {
   name: "m-catalog-item",
   components: {},
   props: {
-    product_data: {
+    productData: {
       type: Object,
       default() {
         return {};
@@ -33,8 +34,8 @@ export default {
     return {};
   },
   methods: {
-    sendData() {
-      this.$emit("sendArticle", this.product_data.article);
+    sendItemToCart() {
+      this.$emit("sendArticle", this.productData.article);
     },
   },
   mounted() {},

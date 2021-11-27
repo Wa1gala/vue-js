@@ -31,7 +31,8 @@ export default {
 
 <style>
 .m-main {
- max-width: 900px;
- margin: 0 auto;
+  max-width: 600px;
+  margin: 0 auto;
+  display: inline-block;
 }
 </style>
