@@ -24,6 +24,23 @@ let router = new Router({
         title: "Cart"
       }
     },
+    {
+      path: "/login",
+      name: "login",
+      component: () => import("../components/log-reg-form/m-login-form.vue"),
+      meta: {
+        title: "Вход"
+      }
+    },
+    {
+      path: "/registration",
+      name: "registration",
+      component: () => import("../components/log-reg-form/m-reg-form.vue"),
+      props: true,
+      meta: {
+        title: "Регистрация"
+      }
+    },
   ],
   mode: 'history'
 });
