@@ -2,7 +2,6 @@ import Vue from "vue";
 import Router from "vue-router";
 
 import mCatalog from "../components/m-catalog.vue";
-import mCart from "../components/m-cart.vue";
 
 Vue.use(Router);
 
@@ -12,14 +11,21 @@ let router = new Router({
       path: "/",
       name: "catalog",
       component: mCatalog,
+      meta: {
+        title: "Catalog"
+      }
     },
     {
       path: "/cart",
       name: "cart",
-      component: mCart,
+      component: () => import("../components/m-cart.vue"),
       props: true,
+      meta: {
+        title: "Cart"
+      }
     },
   ],
+  mode: 'history'
 });
 
 export default router;
