@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <m-main/>
-
   </div>
 </template>
 

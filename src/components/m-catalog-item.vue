@@ -1,7 +1,7 @@
 <template>
   <div class="m-catalog-item">
     <img
-      class="m-catalog-item__img"
+      class="m-catalog-item--img"
       v-bind:src="require('../assets/images/' + productData.image)"
       alt="img"
       style="width: 25%"
@@ -48,7 +48,7 @@ export default {
   box-shadow: 0 0 8px 0;
   padding: $padding * 2;
   margin-bottom: $margin * 2;
-  &__img {
+  &--img {
     background: $color;
     border-radius: 50%;
   }

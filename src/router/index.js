@@ -1,23 +1,32 @@
 import Vue from "vue";
-import Router from "vue-router";
+
+import VueRouter from "vue-router";
 
 import mCatalog from "../components/m-catalog.vue";
 
-import { authNav } from "./authNav";
-import { cartNav } from "./cartNav";
+Vue.use(VueRouter);
 
-Vue.use(Router);
-
-export const routes = [...authNav, ...cartNav];
-
-let router = new Router({
+let router = new VueRouter({
   routes: [
     {
       path: "/",
       name: "catalog",
       component: mCatalog,
+      meta: {
+        title: "Каталог",
+      },
+    },
+    {
+      path: "/cart",
+      name: "cart",
+      component: () => import("../components/m-cart.vue"),
+      props: true,
+      meta: {
+        title: "Корзина",
+      },
     },
   ],
+  mode: "history",
 });
 
 export default router;

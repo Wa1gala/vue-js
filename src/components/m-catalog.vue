@@ -1,10 +1,10 @@
 <template>
   <div class="m-catalog">
-    <router-link :to="{name: 'cart', params: {}}">
-      <div class="m-catalog--link-to-cart">Cart: 0</div>
+    <router-link :to="{ name: 'cart', params: {} }">
+      <div class="m-main--link-to-cart">Cart: 0</div>
     </router-link>
     <h1>Catalog</h1>
-    <div class="v-catalog__list">
+    <div class="v-catalog--list">
       <m-catalog-item
         v-for="product in products"
         :key="product.article"
@@ -89,18 +89,11 @@ export default {
 
 <style lang="scss">
 .m-catalog {
-  &__list {
+  &--list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-  }
-  &--link-to-cart {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    padding: $padding * 2;
-    border: solid 1px #aeaeae;
   }
 }
 </style>
