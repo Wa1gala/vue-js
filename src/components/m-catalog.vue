@@ -1,13 +1,12 @@
 <template>
   <div class="m-catalog">
-
     <router-link :to="{ name: 'cart', params: {} }">
       <div class="m-main--link-to-cart">Cart: 0</div>
     </router-link>
 
-    <div class="m-catalog--link-to-cart">
-      Cart: 0
-    </div>
+    <div class="m-catalog--link-to-cart">Cart: 0</div>
+
+    <div class="m-catalog--link-to-cart">Cart: 0</div>
 
     <h1>Catalog</h1>
     <div class="v-catalog--list">
@@ -89,8 +88,7 @@ export default {
       console.log(data);
     },
   },
-  mounted() {
-  },
+  mounted() {},
 };
 </script>
 
@@ -103,14 +101,12 @@ export default {
     align-items: center;
   }
 
-
   &m-catalog--link-to-cart {
     position: absolute;
     top: 10px;
     right: 10px;
-    padding: $padding*2;
-    border: solid 1px #aeaeae; 
-    }
-
+    padding: $padding * 2;
+    border: solid 1px #aeaeae;
+  }
 }
 </style>

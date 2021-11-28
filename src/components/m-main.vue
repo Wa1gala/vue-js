@@ -1,10 +1,16 @@
 <template>
   <div class="m-main">
 
+
     <keep-alive> <!-- Сохранение состояния при смене url -->
       <router-view>      
       </router-view>
     </keep-alive>   
+
+    <router-view> </router-view>
+    <!-- <m-catalog />
+    <m-cart /> -->
+
 
     <router-view> </router-view>
     <!-- <m-catalog />
@@ -48,6 +54,7 @@ export default {
     border-radius: 12%;
     box-shadow: 0 0 8px 0 #aeaeae;
   }
+
 
   display: inline-block;
 }
