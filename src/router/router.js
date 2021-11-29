@@ -9,11 +9,12 @@ let router = new Router({
   routes: [
     {
       path: "/",
-      name: "catalog",
+      name: "home",
       component: mCatalog,
       meta: {
-        title: "Catalog"
-      }
+        title: "Catalog",
+        layout: "main-layout",
+      },
     },
     {
       path: "/cart",
@@ -21,16 +22,17 @@ let router = new Router({
       component: () => import("../components/m-cart.vue"),
       props: true,
       meta: {
-        title: "Cart"
-      }
+        title: "Cart",
+      },
     },
     {
       path: "/login",
       name: "login",
       component: () => import("../components/log-reg-form/m-login-form.vue"),
       meta: {
-        title: "Вход"
-      }
+        title: "Вход",
+        layout: "auth-layout",
+      },
     },
     {
       path: "/registration",
@@ -38,11 +40,12 @@ let router = new Router({
       component: () => import("../components/log-reg-form/m-reg-form.vue"),
       props: true,
       meta: {
-        title: "Регистрация"
-      }
+        title: "Регистрация",
+        layout: "auth-layout",
+      },
     },
   ],
-  mode: 'history'
+  mode: "history",
 });
 
 export default router;

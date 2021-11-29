@@ -1,9 +1,10 @@
 <template>
   <div class="m-catalog">
-    <router-link :to="{name: 'cart', params: {}}">
+    <router-link :to="{ name: 'cart', params: {} }">
       <div class="m-catalog--link-to-cart">Cart: 0</div>
     </router-link>
     <h1>Catalog</h1>
+
     <div class="v-catalog__list">
       <m-catalog-item
         v-for="product in products"

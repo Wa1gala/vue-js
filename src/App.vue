@@ -1,22 +1,31 @@
 <template>
   <div id="app">
-    <m-main/>
-
+    <component :is="layout">
+      <m-main />
+    </component>
   </div>
 </template>
 
+components\layouts\AuthLayout
+
 <script>
-
-import mMain from './components/m-main'
-
+import mMain from "./components/m-main";
+import MainLayout from "./components/layouts/MainLayout.vue";
+import AuthLayout from "./components/layouts/AuthLayout.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-
     mMain,
-  }
-}
+    MainLayout,
+    AuthLayout,
+  },
+  computed: {
+    layout() {
+      return this.$route.meta?.layout
+    },
+  },
+};
 </script>
 
 <style>
@@ -27,6 +36,5 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-  
 }
 </style>

@@ -8,7 +8,6 @@
     />
     <p class="m-catalog-item__name">{{ productData.name }}</p>
     <p class="m-catalog-item__price">Price: {{ productData.price }}</p>
-    <input type="number" min="0" max="10" value="">
     <button 
     class="m-catalog-item__addBtn btn"
     @click="sendItemToCart"
