@@ -51,5 +51,7 @@ export default {
     background: $color;
     border-radius: 50%;
   }
+    
+
 }
 </style>

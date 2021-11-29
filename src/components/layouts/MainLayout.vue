@@ -14,7 +14,7 @@ import NavBar from "@/components/header/NavBar";
 
 
 export default {
-  name: "AuthLayout",
+  name: "MainLayout",
   components: {
     NavBar,
   },

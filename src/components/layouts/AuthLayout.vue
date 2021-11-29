@@ -1,8 +1,6 @@
 <template>
   <div class="auth-layout">
-    <h2 class="page-title">
-
-    </h2>
+    <h2 class="page-title"></h2>
     <div class="page-container">
       <router-view />
     </div>
@@ -10,7 +8,6 @@
 </template>
 
 <script>
-
 export default {
   name: "AuthLayout",
 };

@@ -1,6 +1,6 @@
 <template>
   <div class="m-cart">
-    <router-link :to="{ name: 'catalog' }">
+    <router-link :to="{ name: 'home' }">
       <div class="m-catalog--link-to-cart">Back to catalog</div>
     </router-link>
     <h1>Cart</h1>

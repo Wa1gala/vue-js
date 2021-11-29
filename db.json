@@ -1,4 +1,18 @@
 {
+  "users": [
+    {
+      "id": "1",
+      "password": "Jhon",
+      "login": "www",
+      "email": "jhon@gmail.com"
+    },
+    {
+    "id": "2",
+      "password": "Mike",
+      "login": "rrr",
+      "email": "mike@gmail.com"
+    }
+  ],
   "products": [
     {
       "image": "avatar1.png",

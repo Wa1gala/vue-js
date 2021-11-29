@@ -1,5 +1,5 @@
 <template>
-  <div id="NavBar">
+  <div class="NavBar">
     <div class="link-wrapper">
       <div class="nav-links">
         <router-link exact to="/login">Логин </router-link>
@@ -20,24 +20,12 @@ export default {
 </script>
 
 <style>
-#navBar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: purple;
-  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.2);
+.NavBar {
+  background-color: #567895;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100px;
 }
-.link-wrapper {
-  margin: 0 auto;
-  height: 100%;
-  width: 100%;
-  max-width: 700px;
-  padding: 12px 24px;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: 24px;
-}
+ 
 </style>

@@ -6,6 +6,7 @@ import mCatalog from "../components/m-catalog.vue";
 Vue.use(Router);
 
 let router = new Router({
+
   routes: [
     {
       path: "/",
@@ -23,6 +24,7 @@ let router = new Router({
       props: true,
       meta: {
         title: "Cart",
+        layout: "auth-layout",
       },
     },
     {
@@ -47,5 +49,16 @@ let router = new Router({
   ],
   mode: "history",
 });
+
+// router.beforeEach((to, from, next) => {
+
+//   const {Token} = localStorage;
+//   if (Token || to.name === 'login' || to.name === 'registration'){
+//     next();
+//   } else{
+//     next('/login')
+//   }
+// })
+
 
 export default router;

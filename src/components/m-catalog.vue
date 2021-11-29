@@ -95,10 +95,10 @@ export default {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-  }
+  } 
   &--link-to-cart {
     position: absolute;
-    top: 10px;
+    top: 150px;
     right: 10px;
     padding: $padding * 2;
     border: solid 1px #aeaeae;
